@@ -1,0 +1,4 @@
+start.sh
+.cache
+config.json
+__pycache__
