@@ -1,0 +1,2 @@
+-- Top 10 artists of the week
+SELECT COUNT(name) AS "top_track_count", artist FROM top_50_tracks WHERE extracted_date >= NOW() - INTERVAL '1 week' GROUP BY artist ORDER BY COUNT(artist) DESC LIMIT 10   
