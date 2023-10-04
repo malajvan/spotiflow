@@ -5,8 +5,8 @@ def load(json_data):
     conn = psycopg2.connect(
         host= "localhost",
         database= "spotiflow_tracks",
-        user= "postgres",
-        password= "postgres",
+        user= "airflow",
+        password= "airflow",
     )
     cur = conn.cursor()
 
